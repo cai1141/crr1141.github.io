@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page.title">AI Tools Directory - Ag-888</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1 class="logo-text">Ag-888</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="#" data-i18n="nav.products">AI Products</a>
+                        <div class="dropdown-menu">
+                            <a href="#latest" data-i18n="nav.latest">Latest</a>
+                            <a href="#most-saved" data-i18n="nav.mostSaved">Most Saved</a>
+                            <a href="#most-visited" data-i18n="nav.mostVisited">Most Visited</a>
+                            <a href="#ai-apps" data-i18n="nav.aiApps">AI Apps</a>
+                            <a href="#discord" data-i18n="nav.discord">Discord of AI</a>
+                            <a href="#plugins" data-i18n="nav.plugins">AI Google Plugins</a>
+                            <a href="#gpts" data-i18n="nav.gpts">GPTs</a>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#" data-i18n="nav.categories">Categories</a>
+                        <div class="dropdown-menu">
+                            <a href="categories/writing.html" data-i18n="categories.writing">Writing & Text</a>
+                            <a href="categories/image.html" data-i18n="categories.image">Image</a>
+                            <a href="categories/video.html" data-i18n="categories.video">Video</a>
+                            <a href="categories/code.html" data-i18n="categories.code">Code & IT</a>
+                            <a href="categories/audio.html" data-i18n="categories.audio">Audio</a>
+                            <a href="categories/business.html" data-i18n="categories.business">Business</a>
+                            <a href="categories/marketing.html" data-i18n="categories.marketing">Marketing</a>
+                            <a href="categories/detector.html" data-i18n="categories.detector">AI Detector</a>
+                            <a href="categories/chatbot.html" data-i18n="categories.chatbot">Chatbot</a>
+                            <a href="categories/design.html" data-i18n="categories.design">Design & Art</a>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#" data-i18n="nav.rankings">Rankings</a>
+                        <div class="dropdown-menu">
+                            <a href="rankings/trending.html" data-i18n="rankings.trending">Trending</a>
+                            <a href="rankings/popular.html" data-i18n="rankings.popular">Most Popular</a>
+                            <a href="rankings/new.html" data-i18n="rankings.new">New Releases</a>
+                            <a href="rankings/rated.html" data-i18n="rankings.rated">Top Rated</a>
+                            <a href="rankings/free.html" data-i18n="rankings.free">Free Tools</a>
+                        </div>
+                    </li>
+                    <li><a href="#" data-i18n="nav.aiModels">AI Models</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button class="btn-submit" data-i18n="actions.submit">Submit</button>
+                <button class="btn-login" data-i18n="actions.login">Login</button>
+                <select class="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Discover the Best AI Tools</h1>
+                <p data-i18n="hero.description">Find and compare the most innovative AI tools and applications</p>
+                <div class="search-container">
+                    <div class="search-box">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" stroke="currentColor" stroke-width="2" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14z"/>
+                        </svg>
+                        <input 
+                            type="text" 
+                            class="search-input" 
+                            data-i18n="search.placeholder" 
+                            placeholder="Search AI tools..."
+                            autocomplete="off"
+                        >
+                        <div class="search-suggestions" style="display: none;">
+                            <!-- 搜索建议将动态添加到这里 -->
+                        </div>
+                    </div>
+                    <button class="search-button" data-i18n="actions.search">
+                        <span class="button-text" data-i18n="actions.search">Search</span>
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path fill="none" stroke="currentColor" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="popular-tags">
+                    <span class="tag" data-i18n="tags.aiWriting">AI Writing</span>
+                    <span class="tag" data-i18n="tags.imageGen">Image Generation</span>
+                    <span class="tag" data-i18n="tags.videoCreation">Video Creation</span>
+                    <span class="tag" data-i18n="tags.codeAssistant">Code Assistant</span>
+                    <span class="tag" data-i18n="tags.voiceAi">Voice AI</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <h2 class="section-title" data-i18n="sections.featured">Featured Tools</h2>
+            <div class="tools-grid">
+                <!-- ChatGPT -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-rating">4.9</div>
+                    </div>
+                    <div class="tool-content">
+                        <h3>ChatGPT</h3>
+                        <p data-i18n="tools.chatgpt.description">OpenAI's AI assistant for natural language conversations and tasks.</p>
+                        <div class="tool-tags">
+                            <span class="tag">AI Assistant</span>
+                            <span class="tag">Free</span>
+                        </div>
+                    </div>
+                    <div class="tool-footer">
+                        <a href="https://chat.openai.com" target="_blank" class="btn-visit" data-i18n="actions.visit">Visit Website</a>
+                        <button class="btn-save">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Midjourney -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-rating">4.8</div>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Midjourney</h3>
+                        <p data-i18n="tools.midjourney.description">AI art and image generation tool with high-quality outputs.</p>
+                        <div class="tool-tags">
+                            <span class="tag">AI Art</span>
+                            <span class="tag">Image Generation</span>
+                        </div>
+                    </div>
+                    <div class="tool-footer">
+                        <a href="https://www.midjourney.com" target="_blank" class="btn-visit" data-i18n="actions.visit">Visit Website</a>
+                        <button class="btn-save">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Claude -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-rating">4.7</div>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Claude</h3>
+                        <p data-i18n="tools.claude.description">Advanced AI assistant by Anthropic for writing and analysis.</p>
+                        <div class="tool-tags">
+                            <span class="tag">AI Assistant</span>
+                            <span class="tag">Writing</span>
+                        </div>
+                    </div>
+                    <div class="tool-footer">
+                        <a href="https://claude.ai" target="_blank" class="btn-visit" data-i18n="actions.visit">Visit Website</a>
+                        <button class="btn-save">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-section">
+            <h2 class="section-title" data-i18n="sections.latest">Latest AI Tools</h2>
+            <div class="tools-grid">
+                <!-- Leonardo.ai -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-rating">4.6</div>
+                        <span class="new-badge" data-i18n="badges.new">New</span>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Leonardo.ai</h3>
+                        <p data-i18n="tools.leonardo.description">New AI art platform with advanced style control and editing.</p>
+                        <div class="tool-tags">
+                            <span class="tag">AI Art</span>
+                            <span class="tag">New Release</span>
+                        </div>
+                    </div>
+                    <div class="tool-footer">
+                        <a href="https://leonardo.ai" target="_blank" class="btn-visit" data-i18n="actions.visit">Visit Website</a>
+                        <button class="btn-save">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Stable Diffusion XL -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-rating">4.7</div>
+                        <span class="new-badge" data-i18n="badges.new">New</span>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Stable Diffusion XL</h3>
+                        <p data-i18n="tools.sdxl.description">Latest version of Stable Diffusion with improved image quality.</p>
+                        <div class="tool-tags">
+                            <span class="tag">AI Art</span>
+                            <span class="tag">Open Source</span>
+                        </div>
+                    </div>
+                    <div class="tool-footer">
+                        <a href="https://stability.ai" target="_blank" class="btn-visit" data-i18n="actions.visit">Visit Website</a>
+                        <button class="btn-save">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.about">About</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="footer.terms">Terms of Use</a></li>
+                        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-i18n="footer.contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                            Twitter
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <div class="contact-info">
+                        <p>
+                            <svg class="contact-icon" viewBox="0 0 24 24">
+                                <path d="M22 2H2v20h20V2zm-2 16H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+                            </svg>
+                            email@toolify.ai
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">Copyright © 2025 Ag-888. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
